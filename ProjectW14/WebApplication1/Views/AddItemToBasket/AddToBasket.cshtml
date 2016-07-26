@@ -1,0 +1,11 @@
+﻿
+@using (Ajax.BeginForm(
+    new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "div1", InsertionMode = InsertionMode.Replace }
+    ))
+
+{ 
+    <h1>Enter Product Code</h1>
+    <h2> Product Code: @Html.TextBox("code") <input type="submit" value="Add" /> </h2> 
+} 
+
+<div id="div1"> </div>

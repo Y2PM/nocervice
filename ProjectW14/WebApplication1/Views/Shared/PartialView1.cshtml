@@ -1,0 +1,15 @@
+﻿@model WebApplication1.Models.Product
+
+@if (Model.id == null)
+{
+    <h1>Invalid Product Code</h1>
+}
+else
+{
+    <h1>Details of product added to database</h1>
+    <h2>
+        Product Code: @Model.id<br />
+        Product Name: @Model.name<br />
+        Product Price: @Model.price<br />
+    </h2>
+}
