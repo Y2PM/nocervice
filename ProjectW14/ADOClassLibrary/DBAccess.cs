@@ -8,8 +8,8 @@ namespace ADOClassLibrary
 {
     public class DBAccess
     {
-        Entities Context;//Injection.
-        public DBAccess(Entities GivenContext)//Construction.
+        Entities1 Context;//Injection.
+        public DBAccess(Entities1 GivenContext)//Construction.
         {
             Context = GivenContext;
         }

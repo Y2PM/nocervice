@@ -12,13 +12,13 @@ namespace WCFServiceCL
 
         public void addItemtoDBServiceMethod(Basket anItem)
         {
-            DBAccess DBAccessObject = new DBAccess(new Entities());
+            DBAccess DBAccessObject = new DBAccess(new Entities1());
             DBAccessObject.addItemtoDB(anItem);
         }
 
         public List<Item> GetItemsFromDB()
         {
-            DBAccess DBAccessObject = new DBAccess(new Entities());
+            DBAccess DBAccessObject = new DBAccess(new Entities1());
             return DBAccessObject.GetItemsFromDB();
         }
     }

@@ -17,7 +17,7 @@ namespace WebApplication1.Controllers
         //static EndpointAddress endpoint = new EndpointAddress("http://trnlon11577:8081/Service");
         //IServe proxy = ChannelFactory<IServe>.CreateChannel(new BasicHttpBinding(), endpoint);
 
-        DBAccess FakeProxy = new DBAccess(new Entities());
+        DBAccess FakeProxy = new DBAccess(new Entities1());
 
         // GET: AddItemToBasket
         public ActionResult AddToBasket(string code)
